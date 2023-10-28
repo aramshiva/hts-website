@@ -25,9 +25,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="h-20 w-screen bg-[#004757]" />
           <div>
-            <div className="bg-[#004757] text-white font-space pt-9 pl-9 flex items-left flex-wrap pb-1">
+            <div className="bg-[#004757] text-white font-space pt-9 pl-9 pb-1">
               <p className="text-3xl font-bold">about</p>
               <div className="h-[100%] w-screen" />
               <p className="pt-3">
@@ -39,7 +38,7 @@ export default function Home() {
             </div>
             <div className="h-20 w-screen bg-[#004757]" />
           </div>
-          <div className="bg-[#004757] text-white pl-9 pr-9 font-space justify-left">
+          <div className="bg-[#004757] text-white pl-9 pr-9 font-space">
             <p className="text-3xl font-bold pb-10">faqs</p>
             <Accordion showDivider={false} variant="shadow">
               <AccordionItem
@@ -118,7 +117,7 @@ export default function Home() {
                 title="i have another question!"
                 className="pb-5 pt-5"
               >
-                please email us at us@hackthesound.net with any questions you
+                please email us at <Link className="underline" href="mailto:us@hackthesound.net">us@hackthesound.net</Link> with any questions you
                 have.
               </AccordionItem>
             </Accordion>

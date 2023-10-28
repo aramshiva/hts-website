@@ -11,7 +11,7 @@ export default function Home() {
       <Layout>
         <Container>
           <div className="w-screen h-screen bg-[#004757] flex justify-center items-center flex-wrap pb-1">
-            <div className="text-white text-5xl text-center">
+            <div className="text-white text-5xl text-center font-space">
               <p className="font-bold underline">hack the sound</p>
               <br />
               <p>december 2nd-3rd, 2023</p>
@@ -19,7 +19,7 @@ export default function Home() {
               <p>tacoma, wa</p>
               <br />
               <Link target="_blank" href="https://forms.gle/iCPw3qu8XkxeqoHG9">
-                <Button className="rounded-md bg-white px-4 py-3 text-sm font-mono text-[#004757] shadow-sm hover:[#005757]">
+                <Button className="rounded-md bg-white px-4 py-3 text-sm font-space text-[#004757] shadow-sm hover:[#005757]">
                   register
                 </Button>
               </Link>
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
           <div className="h-20 w-screen bg-[#004757]" />
           <div>
-            <div className="bg-[#004757] text-white font-mono pt-9 pl-9 flex justify-left items-left flex-wrap pb-1">
+            <div className="bg-[#004757] text-white font-space pt-9 pl-9 flex items-left flex-wrap pb-1">
               <p className="text-3xl font-bold">about</p>
               <div className="h-[100%] w-screen" />
               <p className="pt-3">
@@ -39,7 +39,7 @@ export default function Home() {
             </div>
             <div className="h-20 w-screen bg-[#004757]" />
           </div>
-          <div className="bg-[#004757] text-white pl-9 pr-9 font-mono">
+          <div className="bg-[#004757] text-white pl-9 pr-9 font-space justify-left">
             <p className="text-3xl font-bold pb-10">faqs</p>
             <Accordion showDivider={false} variant="shadow">
               <AccordionItem
@@ -124,19 +124,21 @@ export default function Home() {
             </Accordion>
           </div>
           <div className="h-20 w-screen bg-[#004757]" />
-          <div className="bg-[#004757] text-white pl-9 pr-9 font-mono">
+          <div className="bg-[#004757] text-white pl-9 pr-9 font-space">
             <p className="text-3xl font-bold pb-2">sponsors</p>
             <p className="text-l text-gray-200 pb-5">We need your support for running a high quality event. Contact us at <Link className="underline" href="mailto:us@hackthesound.net">us@hackthesound.net</Link> if you are open to sponsoring us.</p>
           </div>
-          <div className="bg-[#004757] font-mono">
-            <Link href="https://mypcls.org/"><Image src="/piercecountylibrary.png" alt="Pierce County Library System" width={300} height={300}></Image></Link>
-            <Link href="https://freehumans.com/"><Image src="/freehumans.svg" alt="FreeHumans" width={300} height={300}></Image></Link>
+          <div className="bg-[#004757] font-space">
+            <div className="flex">
+              <Image src="/piercecountylibrary.png" alt="Pierce County Library System" width={300} height={300}></Image>
+              <Image src="/freehumans.svg" alt="FreeHumans" width={300} height={300}></Image>
+            </div>
           </div>
-          <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-mono">
+          <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space">
             <p className="text-2xl">Hope to see you there! :)</p>
           </div>
           <div className="h-20 w-screen bg-[#004757]" />
-          <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-mono">
+          <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space">
             <p>made with love | © 2023 hack the sound</p>
           </div>
         </Container>

@@ -1,118 +1,146 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Container from "./components/container";
+import Layout from "./components/layout";
+import { Button, ButtonGroup } from "@nextui-org/react";
+import Link from "next/link";
+import { Accordion, AccordionItem } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    <>
+      <Layout>
+        <Container>
+          <div className="w-screen h-screen bg-[#004757] flex justify-center items-center flex-wrap pb-1">
+            <div className="text-white text-5xl text-center">
+              <p className="font-bold underline">hack the sound</p>
+              <br />
+              <p>december 2nd-3rd, 2023</p>
+              <br />
+              <p>tacoma, wa</p>
+              <br />
+              <Link target="_blank" href="https://forms.gle/iCPw3qu8XkxeqoHG9">
+                <Button className="rounded-md bg-white px-4 py-3 text-sm font-mono text-[#004757] shadow-sm hover:[#005757]">
+                  register
+                </Button>
+              </Link>
+            </div>
+          </div>
+          <div className="h-20 w-screen bg-[#004757]" />
+          <div>
+            <div className="bg-[#004757] text-white font-mono pt-9 pl-9 flex justify-left items-left flex-wrap pb-1">
+              <p className="text-3xl font-bold">about</p>
+              <div className="h-[100%] w-screen" />
+              <p className="pt-3">
+                a hackathon is a social event where developers, designers,
+                engineers, and makers band together to hang out, build projects,
+                and have fun! our hackathon is aimed at 12-18 year olds in the
+                puget sound area, no matter their prior tech experience.
+              </p>
+            </div>
+            <div className="h-20 w-screen bg-[#004757]" />
+          </div>
+          <div className="bg-[#004757] text-white pl-9 pr-9 font-mono">
+            <p className="text-3xl font-bold pb-10">faqs</p>
+            <Accordion showDivider={false} variant="shadow">
+              <AccordionItem
+                key="1"
+                aria-label="Hacking? isn’t that illegal?"
+                title="Hacking? isn’t that illegal?"
+                className="pb-5"
+              >
+                no! in our case, it’s a synonym for “creating” or “making”, not
+                “breaking into computers and robbing people’s data”.
+              </AccordionItem>
+              <AccordionItem
+                key="2"
+                aria-label="is this event free?"
+                title="is this event free?"
+                className="pb-5 pt-5"
+              >
+                yes! thanks to our very generous sponsors below, this event is
+                free for all attendees. we'll have plenty of snacks, swag and
+                we'll also cover dinner!
+              </AccordionItem>
+              <AccordionItem
+                key="3"
+                aria-label="what should i bring?"
+                title="what should i bring?"
+                className="pb-5 pt-5"
+              >
+                a form of identification, laptop, charger(s), power brick (if
+                you have it), and lunch or lunch money to use at local food
+                spots. please also create{" "}
+                <Link className="underline" href="https://github.com">
+                  a free github account
+                </Link>{" "}
+                if you don’t already have one.
+              </AccordionItem>
+              <AccordionItem
+                key="4"
+                aria-label="do i need a team?"
+                title="do i need a team?"
+                className="pb-5 pt-5"
+              >
+                forming a team isn’t mandatory - if you’d rather fly solo,
+                that’s ok! there is a limit of 4 people per team.
+              </AccordionItem>
+              <AccordionItem
+                key="5"
+                aria-label="can i submit past projects?"
+                title="can i submit past projects?"
+                className="pb-5 pt-5"
+              >
+                any project that you submit should have been made during the
+                hackathon, not previously.
+              </AccordionItem>
+              <AccordionItem
+                key="6"
+                aria-label="is there a specific language i should use?"
+                title="is there a specific language i should use?"
+                className="pb-5 pt-5"
+              >
+                nope! you can use anything from scratch to java, even figma
+                prototypes if thats your jam (get it?)! whatever you’d prefer to
+                work with.
+              </AccordionItem>
+              <AccordionItem
+                key="7"
+                aria-label="can i use ai to create my project?"
+                title="can i use ai to create my project?"
+                className="pb-5 pt-5"
+              >
+                you can use ai to improve your code, but not create your
+                project.
+              </AccordionItem>
+              <AccordionItem
+                key="8"
+                aria-label="i have another question!"
+                title="i have another question!"
+                className="pb-5 pt-5"
+              >
+                please email us at us@hackthesound.net with any questions you
+                have.
+              </AccordionItem>
+            </Accordion>
+          </div>
+          <div className="h-20 w-screen bg-[#004757]" />
+          <div className="bg-[#004757] text-white pl-9 pr-9 font-mono">
+            <p className="text-3xl font-bold pb-2">sponsors</p>
+            <p className="text-l text-gray-200 pb-5">We need your support for running a high quality event. Contact us at <Link className="underline" href="mailto:us@hackthesound.net">us@hackthesound.net</Link> if you are open to sponsoring us.</p>
+          </div>
+          <div className="bg-[#004757] font-mono">
+            <Link href="https://mypcls.org/"><Image src="/piercecountylibrary.png" alt="Pierce County Library System" width={300} height={300}></Image></Link>
+            <Link href="https://freehumans.com/"><Image src="/freehumans.svg" alt="FreeHumans" width={300} height={300}></Image></Link>
+          </div>
+          <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-mono">
+            <p className="text-2xl">Hope to see you there! :)</p>
+          </div>
+          <div className="h-20 w-screen bg-[#004757]" />
+          <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-mono">
+            <p>made with love | © 2023 hack the sound</p>
+          </div>
+        </Container>
+      </Layout>
+    </>
+  );
 }

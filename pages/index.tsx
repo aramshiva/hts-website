@@ -48,8 +48,8 @@ export default function Home() {
                 title="Hacking? isn’t that illegal?"
                 className="pb-5"
               >
-                no! in our case, it’s a synonym for “creating” or “making”, not
-                “breaking into computers and robbing people’s data”.
+                no! in our case, it{"’"}s a synonym for “creating” or “making”, not
+                “breaking into computers and robbing people{"’"}s data”.
               </AccordionItem>
               <AccordionItem
                 key="2"
@@ -58,8 +58,8 @@ export default function Home() {
                 className="pb-5 pt-5"
               >
                 yes! thanks to our very generous sponsors below, this event is
-                free for all attendees. we'll have plenty of snacks, swag and
-                we'll also cover dinner!
+                free for all attendees. we{"'"}ll have plenty of snacks, swag and
+                we{"'"}ll also cover dinner!
               </AccordionItem>
               <AccordionItem
                 key="3"
@@ -81,8 +81,8 @@ export default function Home() {
                 title="do i need a team?"
                 className="pb-5 pt-5"
               >
-                forming a team isn’t mandatory - if you’d rather fly solo,
-                that’s ok! there is a limit of 4 people per team.
+                forming a team isn{"’"}t mandatory - if you{"’"}d rather fly solo,
+                that’{"’"} ok! there is a limit of 4 people per team.
               </AccordionItem>
               <AccordionItem
                 key="5"
@@ -100,7 +100,7 @@ export default function Home() {
                 className="pb-5 pt-5"
               >
                 nope! you can use anything from scratch to java, even figma
-                prototypes if thats your jam (get it?)! whatever you’d prefer to
+                prototypes if thats your jam (get it?)! whatever you{"’"}d prefer to
                 work with.
               </AccordionItem>
               <AccordionItem

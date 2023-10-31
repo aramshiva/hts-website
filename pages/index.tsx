@@ -80,8 +80,8 @@ export default function Home() {
                 title="do i need a team?"
                 className="pb-5 pt-5"
               >
-                forming a team isn{"’"}t mandatory - if you{"’"}d rather fly solo,
-                that’{"’"} ok! there is a limit of 4 people per team.
+                forming a team isn't mandatory. if you{"’"}d rather fly solo,
+                that{"’"}s ok! there is a limit of four people per team.    
               </AccordionItem>
               <AccordionItem
                 key="5"

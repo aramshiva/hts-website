@@ -39,6 +39,25 @@ export default function Home() {
             <div className="h-20 w-screen bg-[#004757]" />
           </div>
           <div className="bg-[#004757] text-white pl-9 pr-9 font-space">
+            <p className="text-3xl font-bold pb-10">schedule</p>
+            <Accordion showDivider={false} variant="shadow">
+              <AccordionItem key="1" aria-label="first day (dec. 2nd)" title="first day (dec. 2nd)" className="pb-5">
+                <span className="font-bold">10am:</span> check-in, welcome, opening ceremony<br/>
+                <span className="font-bold">11am:</span> hacking begins!<br/>
+                <span className="font-bold">1pm:</span> lunch<br/>
+                <span className="font-bold">2pm:</span> workshop (theme TBA!)<br/>
+                <span className="font-bold">5pm:</span> dinner + games<br/>
+                <span className="font-bold">6pm:</span> closing<br/>
+              </AccordionItem>
+              <AccordionItem key="2" aria-label="second day (dec. 3rd)" title="second day (dec. 3rd)" className="pb-5">
+                <span className="font-bold">10am:</span> check-in, hacking continues!<br/>
+                <span className="font-bold">1pm:</span> lunch<br/>
+                <span className="font-bold">2:45pm:</span> submissions due<br/>
+                <span className="font-bold">3pm:</span> judging + prizes, closing ceremony<br/>
+              </AccordionItem>
+            </Accordion>
+          </div>
+          <div className="bg-[#004757] text-white pl-9 pr-9 font-space">
             <p className="text-3xl font-bold pb-10">faqs</p>
             <Accordion showDivider={false} variant="shadow">
               <AccordionItem

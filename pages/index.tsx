@@ -4,6 +4,7 @@ import { Button, ButtonGroup } from "@nextui-org/react";
 import Link from "next/link";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
@@ -147,10 +148,11 @@ export default function Home() {
             <p className="text-l text-gray-200 pb-5">We need your support for running a high quality event. Contact us at <Link className="underline" href="mailto:us@hackthesound.net">us@hackthesound.net</Link> if you are open to sponsoring us.</p>
           </div>
           <div className="bg-[#004757] font-space">
-            <div className="flex">
-              <Image src="/piercecountylibrary.png" alt="Pierce County Library System" width={300} height={300}></Image>
-              <Image src="/freehumans.svg" alt="FreeHumans" width={300} height={300}></Image>
-            </div>
+            <Marquee autoFill className="pr-5 pl-5 justify-left" pauseOnHover>
+              <Link href="https://mypcls.org/"><Image src="/piercecountylibrary.png" alt="Pierce County Library System" width={200} height={200}/></Link>
+              <Link href="https://www.freehumans.com"><Image src="/freehumans.svg" alt="FreeHumans" width={200} height={200}/></Link>
+              <Link href="https://www.echo3d.com/"><Image src="/echo3D.png" alt="echo3D" width={200} height={200} className="pr-5 pl-5"/></Link>
+            </Marquee>
           </div>
           <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space">
             <p className="text-2xl">Hope to see you there! :)</p>

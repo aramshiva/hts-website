@@ -52,9 +52,9 @@ export default function Home() {
               </AccordionItem>
               <AccordionItem key="2" aria-label="second day (dec. 3rd)" title="second day (dec. 3rd)" className="pb-5">
                 <span className="font-bold">10am:</span> check-in, hacking continues!<br/>
-                <span className="font-bold">1pm:</span> lunch<br/>
-                <span className="font-bold">2:45pm:</span> submissions due<br/>
-                <span className="font-bold">3pm:</span> judging + prizes, closing ceremony<br/>
+                <span className="font-bold">1pm:</span> submissions due (!!!), lunch<br/>
+                <span className="font-bold">2pm:</span> judging<br/>
+                <span className="font-bold">3pm:</span> prizes, closing ceremony<br/>
               </AccordionItem>
             </Accordion>
           </div>

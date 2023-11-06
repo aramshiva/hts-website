@@ -152,6 +152,7 @@ export default function Home() {
               <Link href="https://mypcls.org/"><Image src="/piercecountylibrary.png" alt="Pierce County Library System" width={200} height={200}/></Link>
               <Link href="https://www.freehumans.com"><Image src="/freehumans.svg" alt="FreeHumans" width={200} height={200}/></Link>
               <Link href="https://www.taskade.com"><Image src="/taskade.png" alt="Taskade" width={200} height={200} className="pl-5 pr-5"/></Link>
+              <Link href="https://www.desmos.com/"><Image src="/desmos.png" alt="Desmos" width={200} height={200} className="pl-5 pr-5"/></Link>
               <Link href="https://www.echo3d.com/"><Image src="/echo3D.png" alt="echo3D" width={200} height={200} className="pl-5 pr-5"/></Link>
             </Marquee>
           </div>

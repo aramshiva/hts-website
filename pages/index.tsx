@@ -151,7 +151,8 @@ export default function Home() {
             <Marquee autoFill className="pr-5 pl-5 justify-left" pauseOnHover>
               <Link href="https://mypcls.org/"><Image src="/piercecountylibrary.png" alt="Pierce County Library System" width={200} height={200}/></Link>
               <Link href="https://www.freehumans.com"><Image src="/freehumans.svg" alt="FreeHumans" width={200} height={200}/></Link>
-              <Link href="https://www.echo3d.com/"><Image src="/echo3D.png" alt="echo3D" width={200} height={200} className="pr-5 pl-5"/></Link>
+              <Link href="https://www.taskade.com"><Image src="/taskade.png" alt="Taskade" width={200} height={200} className="pl-5 pr-5"/></Link>
+              <Link href="https://www.echo3d.com/"><Image src="/echo3D.png" alt="echo3D" width={200} height={200} className="pl-5 pr-5"/></Link>
             </Marquee>
           </div>
           <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space">

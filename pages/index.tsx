@@ -153,7 +153,8 @@ export default function Home() {
               <Link href="https://www.freehumans.com"><Image src="/freehumans.svg" alt="FreeHumans" width={200} height={200}/></Link>
               <Link href="https://www.taskade.com"><Image src="/taskade.png" alt="Taskade" width={200} height={200} className="pl-5 pr-5"/></Link>
               <Link href="https://www.desmos.com/"><Image src="/desmos.png" alt="Desmos" width={200} height={200} className="pl-5 pr-5"/></Link>
-              <Link href="https://www.echo3d.com/"><Image src="/echo3D.png" alt="echo3D" width={200} height={200} className="pl-5 pr-5"/></Link>
+              <Link href="https://www.vercel.com/"><Image src="/vercel.svg" alt="Vercel" width={200} height={200} className="pl-5 pr-5"/></Link>
+              <Link href="https://www.1password.com/"><Image src="/1password.svg" alt="1Password" width={200} height={200} className="pl-5 pr-5"/></Link>
             </Marquee>
           </div>
           <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space">

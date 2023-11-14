@@ -161,7 +161,8 @@ export default function Home() {
             <p className="text-2xl">Hope to see you there! :)</p>
           </div>
           <div className="h-20 w-screen bg-[#004757]" />
-          <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space">
+          <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space pb-10">
+            <p>Hack The Sound is fiscally sponsored by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).</p>
             <p>made with love | © 2023 hack the sound</p>
           </div>
         </Container>

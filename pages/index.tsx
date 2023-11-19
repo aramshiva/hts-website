@@ -24,6 +24,15 @@ export default function Home() {
                   register
                 </Button>
               </Link>
+              <span className="pr-5"/>
+              <Link
+                target="_blank"
+                href="https://hcb.hackclub.com/donations/start/hackthesound"
+              >
+                <Button className="rounded-md bg-white/10 px-4 py-3 text-sm font-space text-white shadow-sm hover:[#005757]">
+                  donate
+                </Button>
+              </Link>
             </div>
           </div>
           <div>
@@ -42,19 +51,42 @@ export default function Home() {
           <div className="bg-[#004757] text-white pl-9 pr-9 font-space">
             <p className="text-3xl font-bold pb-10">schedule</p>
             <Accordion showDivider={false} variant="shadow">
-              <AccordionItem key="1" aria-label="first day (dec. 2nd)" title="first day (dec. 2nd)" className="pb-5">
-                <span className="font-bold">10am:</span> check-in, welcome, opening ceremony<br/>
-                <span className="font-bold">11am:</span> hacking begins!<br/>
-                <span className="font-bold">1pm:</span> lunch<br/>
-                <span className="font-bold">2pm:</span> workshop (theme TBA!)<br/>
-                <span className="font-bold">5pm:</span> dinner + games<br/>
-                <span className="font-bold">6pm:</span> closing<br/>
+              <AccordionItem
+                key="1"
+                aria-label="first day (dec. 2nd)"
+                title="first day (dec. 2nd)"
+                className="pb-5"
+              >
+                <span className="font-bold">10am:</span> check-in, welcome,
+                opening ceremony
+                <br />
+                <span className="font-bold">11am:</span> hacking begins!
+                <br />
+                <span className="font-bold">1pm:</span> lunch
+                <br />
+                <span className="font-bold">2pm:</span> workshop (theme TBA!)
+                <br />
+                <span className="font-bold">5pm:</span> dinner + games
+                <br />
+                <span className="font-bold">6pm:</span> closing
+                <br />
               </AccordionItem>
-              <AccordionItem key="2" aria-label="second day (dec. 3rd)" title="second day (dec. 3rd)" className="pb-5">
-                <span className="font-bold">10am:</span> check-in, hacking continues!<br/>
-                <span className="font-bold">1pm:</span> submissions due (!!!), lunch<br/>
-                <span className="font-bold">2pm:</span> judging<br/>
-                <span className="font-bold">3pm:</span> prizes, closing ceremony<br/>
+              <AccordionItem
+                key="2"
+                aria-label="second day (dec. 3rd)"
+                title="second day (dec. 3rd)"
+                className="pb-5"
+              >
+                <span className="font-bold">10am:</span> check-in, hacking
+                continues!
+                <br />
+                <span className="font-bold">1pm:</span> submissions due (!!!),
+                lunch
+                <br />
+                <span className="font-bold">2pm:</span> judging
+                <br />
+                <span className="font-bold">3pm:</span> prizes, closing ceremony
+                <br />
               </AccordionItem>
             </Accordion>
           </div>
@@ -67,8 +99,8 @@ export default function Home() {
                 title="Hacking? isn’t that illegal?"
                 className="pb-5"
               >
-                no! in our case, it{"’"}s a synonym for “creating” or “making”, not
-                “breaking into computers and robbing people{"’"}s data”.
+                no! in our case, it{"’"}s a synonym for “creating” or “making”,
+                not “breaking into computers and robbing people{"’"}s data”.
               </AccordionItem>
               <AccordionItem
                 key="2"
@@ -77,8 +109,8 @@ export default function Home() {
                 className="pb-5 pt-5"
               >
                 yes! thanks to our very generous sponsors below, this event is
-                free for all attendees. we{"'"}ll have plenty of snacks, swag and
-                we{"'"}ll also cover dinner!
+                free for all attendees. we{"'"}ll have plenty of snacks, swag
+                and we{"'"}ll also cover dinner!
               </AccordionItem>
               <AccordionItem
                 key="3"
@@ -100,8 +132,8 @@ export default function Home() {
                 title="do i need a team?"
                 className="pb-5 pt-5"
               >
-                forming a team isn{"’"}t mandatory. if you{"’"}d rather fly solo,
-                that{"’"}s ok! there is a limit of four people per team.    
+                forming a team isn{"’"}t mandatory. if you{"’"}d rather fly
+                solo, that{"’"}s ok! there is a limit of four people per team.
               </AccordionItem>
               <AccordionItem
                 key="5"
@@ -119,8 +151,8 @@ export default function Home() {
                 className="pb-5 pt-5"
               >
                 nope! you can use anything from scratch to java, even figma
-                prototypes if thats your jam (get it?)! whatever you{"’"}d prefer to
-                work with.
+                prototypes if thats your jam (get it?)! whatever you{"’"}d
+                prefer to work with.
               </AccordionItem>
               <AccordionItem
                 key="7"
@@ -137,33 +169,102 @@ export default function Home() {
                 title="i have another question!"
                 className="pb-5 pt-5"
               >
-                please email us at <Link className="underline" href="mailto:us@hackthesound.net">us@hackthesound.net</Link> with any questions you
-                have.
+                please email us at{" "}
+                <Link className="underline" href="mailto:us@hackthesound.net">
+                  us@hackthesound.net
+                </Link>{" "}
+                with any questions you have.
               </AccordionItem>
             </Accordion>
           </div>
           <div className="h-20 w-screen bg-[#004757]" />
           <div className="bg-[#004757] text-white pl-9 pr-9 font-space">
             <p className="text-3xl font-bold pb-2">sponsors</p>
-            <p className="text-l text-gray-200 pb-5">We need your support for running a high quality event. Contact us at <Link className="underline" href="mailto:us@hackthesound.net">us@hackthesound.net</Link> if you are open to sponsoring us.</p>
+            <p className="text-l text-gray-200 pb-5">
+              We need your support for running a high quality event. Contact us
+              at{" "}
+              <Link className="underline" href="mailto:us@hackthesound.net">
+                us@hackthesound.net
+              </Link>{" "}
+              if you are open to sponsoring us.
+            </p>
           </div>
           <div className="bg-[#004757] font-space">
             <Marquee autoFill className="pr-5 pl-5 justify-left" pauseOnHover>
-              <Link href="https://mypcls.org/"><Image src="/piercecountylibrary.png" alt="Pierce County Library System" width={200} height={200}/></Link>
-              <Link href="https://www.freehumans.com"><Image src="/freehumans.svg" alt="FreeHumans" width={200} height={200}/></Link>
-              <Link href="https://www.taskade.com"><Image src="/taskade.png" alt="Taskade" width={200} height={200} className="pl-5 pr-5"/></Link>
-              <Link href="https://www.desmos.com/"><Image src="/desmos.png" alt="Desmos" width={200} height={200} className="pl-5 pr-5"/></Link>
-              <Link href="https://www.vercel.com/"><Image src="/vercel.svg" alt="Vercel" width={200} height={200} className="pl-5 pr-5"/></Link>
-              <Link href="https://www.1password.com/"><Image src="/1password.svg" alt="1Password" width={200} height={200} className="pl-5 pr-5"/></Link>
-              <Link href="https://www.37signals.com/"><Image src="/37signals.svg" alt="37signals" width={200} height={200} className="pl-5 pr-5"/></Link>
+              <Link href="https://mypcls.org/">
+                <Image
+                  src="/piercecountylibrary.png"
+                  alt="Pierce County Library System"
+                  width={200}
+                  height={200}
+                />
+              </Link>
+              <Link href="https://www.freehumans.com">
+                <Image
+                  src="/freehumans.svg"
+                  alt="FreeHumans"
+                  width={200}
+                  height={200}
+                />
+              </Link>
+              <Link href="https://www.taskade.com">
+                <Image
+                  src="/taskade.png"
+                  alt="Taskade"
+                  width={200}
+                  height={200}
+                  className="pl-5 pr-5"
+                />
+              </Link>
+              <Link href="https://www.desmos.com/">
+                <Image
+                  src="/desmos.png"
+                  alt="Desmos"
+                  width={200}
+                  height={200}
+                  className="pl-5 pr-5"
+                />
+              </Link>
+              <Link href="https://www.vercel.com/">
+                <Image
+                  src="/vercel.svg"
+                  alt="Vercel"
+                  width={200}
+                  height={200}
+                  className="pl-5 pr-5"
+                />
+              </Link>
+              <Link href="https://www.1password.com/">
+                <Image
+                  src="/1password.svg"
+                  alt="1Password"
+                  width={200}
+                  height={200}
+                  className="pl-5 pr-5"
+                />
+              </Link>
+              <Link href="https://www.37signals.com/">
+                <Image
+                  src="/37signals.svg"
+                  alt="37signals"
+                  width={200}
+                  height={200}
+                  className="pl-5 pr-5"
+                />
+              </Link>
             </Marquee>
           </div>
           <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space">
             <p className="text-2xl">Hope to see you there! :)</p>
           </div>
           <div className="h-20 w-screen bg-[#004757]" />
+          <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space pb-5">
+            <p>
+              Hack The Sound is fiscally sponsored by The Hack Foundation
+              (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).
+            </p>
+          </div>
           <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space pb-10">
-            <p>Hack The Sound is fiscally sponsored by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).</p>
             <p>made with love | © 2023 hack the sound</p>
           </div>
         </Container>

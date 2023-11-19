@@ -155,6 +155,7 @@ export default function Home() {
               <Link href="https://www.desmos.com/"><Image src="/desmos.png" alt="Desmos" width={200} height={200} className="pl-5 pr-5"/></Link>
               <Link href="https://www.vercel.com/"><Image src="/vercel.svg" alt="Vercel" width={200} height={200} className="pl-5 pr-5"/></Link>
               <Link href="https://www.1password.com/"><Image src="/1password.svg" alt="1Password" width={200} height={200} className="pl-5 pr-5"/></Link>
+              <Link href="https://www.37signals.com/"><Image src="/37signals.svg" alt="37signals" width={200} height={200} className="pl-5 pr-5"/></Link>
             </Marquee>
           </div>
           <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space">

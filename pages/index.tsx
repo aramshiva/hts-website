@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   return (
@@ -252,6 +253,15 @@ export default function Home() {
                   className="pl-5 pr-5"
                 />
               </Link>
+              <Link href="https://www.hackclub.com/">
+                <Image
+                  src="/hc.svg"
+                  alt="Hack Club"
+                  width={200}
+                  height={200}
+                  className="pl-5 pr-5"
+                />
+              </Link>
             </Marquee>
           </div>
           <div className="bg-[#004757] text-center flex justify-center items-center flex-wrap text-white font-space">
@@ -269,6 +279,7 @@ export default function Home() {
           </div>
         </Container>
       </Layout>
+      <Analytics />
     </>
   );
 }

@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Layout>
         <Container>
-          <div className="w-screen h-screen bg-[#004757] flex justify-center items-center flex-wrap pb-1">
+          <div className="w-screen h-[90vh] bg-[#004757] flex justify-center items-center flex-wrap pb-1">
             <div className="text-white text-5xl text-center font-space">
               <p className="font-bold underline">hack the sound</p>
               <br />
